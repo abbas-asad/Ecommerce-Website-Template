@@ -142,7 +142,7 @@ export default function BlogPage() {
             <div className="space-y-4">
               <a href="#" className="flex gap-4 group">
                 <img
-                  src="/placeholder.svg?height=60&width=60"
+                  src="/blog2.png"
                   alt="Going all-in with millennial design"
                   className="w-16 h-16 object-cover"
                 />
@@ -153,7 +153,7 @@ export default function BlogPage() {
               </a>
               <a href="#" className="flex gap-4 group">
                 <img
-                  src="/placeholder.svg?height=60&width=60"
+                  src="/blog2.png"
                   alt="Exploring new ways of decorating"
                   className="w-16 h-16 object-cover"
                 />
@@ -164,7 +164,7 @@ export default function BlogPage() {
               </a>
               <a href="#" className="flex gap-4 group">
                 <img
-                  src="/placeholder.svg?height=60&width=60"
+                  src="/blog2.png"
                   alt="Modern home in Milan"
                   className="w-16 h-16 object-cover"
                 />
@@ -175,7 +175,7 @@ export default function BlogPage() {
               </a>
               <a href="#" className="flex gap-4 group">
                 <img
-                  src="/placeholder.svg?height=60&width=60"
+                  src="/blog2.png"
                   alt="Colorful office redesign"
                   className="w-16 h-16 object-cover"
                 />
