@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import Image from "next/image"
 import Link from "next/link"
@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Trash2 } from 'lucide-react'
 import { useState } from 'react'
+import Featuressection from "../components/featuressection"
 
 const initialCartItems = [
   {
@@ -35,6 +36,7 @@ export default function CartPage() {
   const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0)
 
   return (
+    <>
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-6">Shopping Cart</h1>
       <div className="grid lg:grid-cols-3 gap-8">
@@ -121,6 +123,9 @@ export default function CartPage() {
         </div>
       </div>
     </div>
+    <Featuressection />
+    </>
+
   )
 }
 
