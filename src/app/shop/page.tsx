@@ -1,6 +1,7 @@
 import Heroheader from "../components/heroheader"
 import Productsshowcase from "../components/productsshowcase"
 import Dropdownmenu from '../components/dropdownmenu'
+import Featuressection from "../components/featuressection"
 
 
 export default function ShopPage() {
@@ -32,6 +33,7 @@ export default function ShopPage() {
           </button>
         </div>
       </div>
+      <Featuressection />
     </main>
   )
 }
