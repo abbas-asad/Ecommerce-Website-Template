@@ -14,8 +14,8 @@ const navItems = [
 
 const actionIcons = [
   { name: 'User Profile', icon: User, href: '/account' },
-  { name: 'Search', icon: Search, href: '/' },
-  { name: 'Wishlist', icon: Heart, href: '/' },
+  // { name: 'Search', icon: Search, href: '/' },
+  // { name: 'Wishlist', icon: Heart, href: '/' },
   { name: 'Shopping Cart', icon: ShoppingCart, href: '/cart' },
 ]
 
