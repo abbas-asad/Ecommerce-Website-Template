@@ -4,7 +4,7 @@ import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 
 export const metadata: Metadata = {
-  title: "Hackathon",
+  title: "Luxemart",
   description: "Modern furniture for your home",
 };
 
