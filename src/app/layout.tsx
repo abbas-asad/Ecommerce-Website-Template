@@ -5,7 +5,7 @@ import Navbar from "./components/navbar";
 
 export const metadata: Metadata = {
   title: "Luxemart",
-  description: "Modern furniture for your home",
+  description: "Ecommerce Website",
 };
 
 export default function RootLayout({
