@@ -29,7 +29,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link 
             href="/" 
-            className="text-xl font-semibold text-gray-900 hover:text-black transition-colors pr-8"
+            className="text-xl font-semibold text-gray-900 hover:text-black transition-colors"
           >
             BrandLogo
           </Link>
