@@ -1,52 +1,57 @@
+import Link from "next/link";
+
 const Footer = () => {
-  // Data for the footer links and sections
-  const links = [
+  const shopLinks = [
     { name: "Home", href: "#" },
     { name: "Shop", href: "#" },
-    { name: "About", href: "#" },
+    { name: "About Us", href: "#" },
     { name: "Contact", href: "#" },
   ];
 
   const helpLinks = [
     { name: "Payment Options", href: "#" },
-    { name: "Returns", href: "#" },
-    { name: "Privacy Policies", href: "#" },
+    { name: "Returns & Refunds", href: "#" },
+    { name: "Privacy Policy", href: "#" },
+    { name: "FAQs", href: "#" },
   ];
 
   return (
-    <footer className="bg-white text-gray-800 py-8 px-11 border-t">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-gray-50 text-gray-800 border-t">
+      <div className="container mx-auto px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Address Section */}
-        <div className="flex flex-col space-y-4">
+        <div className="space-y-4">
+          <h4 className="font-semibold text-sm text-[#9F9F9F]">Address</h4>
           <address className="not-italic text-sm text-[#9F9F9F]">
             400 University Drive Suite 200 Coral <br />
             Gables, <br /> FL 33134 USA
           </address>
+          <p className="text-sm text-[#9F9F9F]">luxemart@gmail.com</p>
+          <p className="text-sm text-[#9F9F9F]">+1-305-555-1234</p>
         </div>
 
-        {/* Links Section */}
+        {/* Shop Links */}
         <div>
-          <h4 className="font-semibold text-sm mb-4 text-[#9F9F9F]">Links</h4>
-          <ul className="space-y-2 text-sm font-semibold">
-            {links.map((link, index) => (
+          <h4 className="font-semibold text-sm mb-4 text-[#9F9F9F]">Shop</h4>
+          <ul className="space-y-2 text-sm font-medium">
+            {shopLinks.map((link, index) => (
               <li key={index}>
-                <a href={link.href} className="hover:underline">
+                <Link href={link.href} className="hover:underline text-gray-700">
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Help Section */}
+        {/* Help Links */}
         <div>
           <h4 className="font-semibold text-sm mb-4 text-[#9F9F9F]">Help</h4>
-          <ul className="space-y-2 text-sm font-semibold">
+          <ul className="space-y-2 text-sm font-medium">
             {helpLinks.map((link, index) => (
               <li key={index}>
-                <a href={link.href} className="hover:underline">
+                <Link href={link.href} className="hover:underline text-gray-700">
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -55,15 +60,18 @@ const Footer = () => {
         {/* Newsletter Section */}
         <div>
           <h4 className="font-semibold text-sm mb-4 text-[#9F9F9F]">Newsletter</h4>
+          <p className="text-sm text-[#9F9F9F] mb-4">
+            Subscribe to get the latest updates and offers.
+          </p>
           <form className="flex flex-col space-y-2">
             <input
               type="email"
-              placeholder="Enter Your Email Address"
-              className="border-b-2 border-gray-300 py-2 px-4 text-sm focus:outline-none focus:border-black"
+              placeholder="Enter your email"
+              className="border border-gray-300 py-2 px-4 text-sm focus:outline-none focus:border-gray-500 rounded"
             />
             <button
               type="submit"
-              className="bg-black text-white py-2 px-4 rounded mt-4 hover:bg-gray-800"
+              className="bg-black text-white py-2 px-4 rounded hover:bg-gray-800"
             >
               Subscribe
             </button>
@@ -71,10 +79,11 @@ const Footer = () => {
         </div>
       </div>
 
+
       {/* Footer Bottom */}
-      <hr className="mt-5" />
-      <div className="mt-6 text-center text-sm text-gray-500">
-        © 2022 Meubel House. All rights reserved
+      <hr className="border-gray-200" />
+      <div className="py-6 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} Luxemart. All rights reserved.
       </div>
     </footer>
   );

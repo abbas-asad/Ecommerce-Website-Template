@@ -33,7 +33,7 @@ const Blogsection = () => {
 
     return (
         <section className="py-16 bg-white text-center">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-6 lg:px-8">
                 {/* Title Section */}
                 <h2 className="text-3xl font-bold text-center mb-2">Our Blogs</h2>
                 <p className="text-gray-600 text-center mb-8">
